@@ -24,12 +24,12 @@
       </svg>
       <div class="map-controls" role="group" aria-label="Map controls">
         <button id="zoom-in" aria-label="Zoom in">+</button>
-        <button id="zoom-out" aria-label="Zoom out">−</button>
+        <button id="zoom-out" aria-label="Zoom out">-</button>
         <button id="reset-map" aria-label="Fit map">Fit</button>
       </div>
       <span id="map-tooltip" hidden></span>
       <aside class="map-peek" id="map-peek" aria-label="Selected station photo" hidden>
-        <button id="peek-close" aria-label="Dismiss station photo">×</button>
+        <button id="peek-close" aria-label="Dismiss station photo">x</button>
         <button id="peek-photo"><img id="peek-image" alt=""><span id="peek-name"></span></button>
       </aside>
       <div class="map-caption">MBTA · June 2026</div>
@@ -41,7 +41,7 @@
         <p id="station-lines" class="eyebrow"></p>
         <h2 id="station-title">Park Street</h2>
         <p id="photo-source" class="photo-source"></p>
-        <div class="photo-pagination"><button id="previous-photo" aria-label="Previous photo">←</button><span id="photo-count"></span><button id="next-photo" aria-label="Next photo">→</button></div>
+        <div class="photo-pagination"><button id="previous-photo" aria-label="Previous photo">&lt;-</button><span id="photo-count"></span><button id="next-photo" aria-label="Next photo">-&gt;</button></div>
       </div>
     </section>
   </section>
@@ -49,12 +49,12 @@
   <section class="route-plan" aria-labelledby="route-title">
     <h2 id="route-title">Route plan</h2>
     <ol class="route-chunks">
-      <li><span class="chunk-number" aria-hidden="true">01</span><div><div class="chunk-head"><span class="line-dot" style="--line:#39b66c" aria-hidden="true"></span>Green</div><div class="route-branch"><span class="branch-label">B · Boston College:</span><div class="route-stops"><span>Park Street</span><span class="arrow" aria-hidden="true">→</span><span>Boston College</span><span class="arrow" aria-hidden="true">→</span><span>Kenmore</span></div></div><div class="route-branch"><span class="branch-label">C · Cleveland Circle:</span><div class="route-stops"><span>Kenmore</span><span class="arrow" aria-hidden="true">→</span><span>Cleveland Circle</span><span class="arrow" aria-hidden="true">→</span><span>Kenmore</span></div></div><div class="route-branch"><span class="branch-label">D · Riverside:</span><div class="route-stops"><span>Kenmore</span><span class="arrow" aria-hidden="true">→</span><span>Riverside</span><span class="arrow" aria-hidden="true">→</span><span>Copley</span></div></div><div class="route-branch"><span class="branch-label">E · Heath Street:</span><div class="route-stops"><span>Copley</span><span class="arrow" aria-hidden="true">→</span><span>Heath Street</span><span class="arrow" aria-hidden="true">→</span><span>Copley</span><span class="arrow" aria-hidden="true">→</span><span>Park Street</span></div></div></div></li>
-      <li><span class="chunk-number" aria-hidden="true">02</span><div><div class="chunk-head"><span class="line-dot" style="--line:#ee4949" aria-hidden="true"></span>Red + Mattapan</div><div class="route-stops"><span>Park Street</span><span class="arrow" aria-hidden="true">→</span><span>Alewife</span><span class="arrow" aria-hidden="true">→</span><span>Braintree</span><span class="arrow" aria-hidden="true">→</span><span>JFK/UMass</span><span class="arrow" aria-hidden="true">→</span><span>Mattapan</span><span class="arrow" aria-hidden="true">→</span><span>Downtown Crossing</span></div></div></li>
-      <li><span class="chunk-number" aria-hidden="true">03</span><div><div class="chunk-head"><span class="line-dot" style="--line:#f7a539" aria-hidden="true"></span>Orange</div><div class="route-stops"><span>Downtown Crossing</span><span class="arrow" aria-hidden="true">→</span><span>Forest Hills</span><span class="arrow" aria-hidden="true">→</span><span>Oak Grove</span><span class="arrow" aria-hidden="true">→</span><span>North Station</span></div></div></li>
-      <li><span class="chunk-number" aria-hidden="true">04</span><div><div class="chunk-head"><span class="line-dot" style="--line:#39b66c" aria-hidden="true"></span>Green</div><div class="route-branch"><span class="branch-label">D · Union Square:</span><div class="route-stops"><span>North Station</span><span class="arrow" aria-hidden="true">→</span><span>Union Square</span><span class="arrow" aria-hidden="true">→</span><span>Lechmere</span></div></div><div class="route-branch"><span class="branch-label">E · Medford/Tufts:</span><div class="route-stops"><span>Lechmere</span><span class="arrow" aria-hidden="true">→</span><span>Medford/Tufts</span><span class="arrow" aria-hidden="true">→</span><span>Government Center</span></div></div></div></li>
-      <li><span class="chunk-number" aria-hidden="true">05</span><div><div class="chunk-head"><span class="line-dot" style="--line:#609cec" aria-hidden="true"></span>Blue</div><div class="route-stops"><span>Government Center</span><span class="arrow" aria-hidden="true">→</span><span>Bowdoin</span><span class="arrow" aria-hidden="true">→</span><span>Wonderland</span><span class="arrow" aria-hidden="true">→</span><span>Government Center</span></div></div></li>
-      <li><span class="chunk-number" aria-hidden="true">06</span><div><div class="chunk-head"><span class="line-dot" style="--line:#39b66c" aria-hidden="true"></span>Green</div><div class="route-stops"><span>Government Center</span><span class="arrow" aria-hidden="true">→</span><span>Park Street</span></div></div></li>
+      <li><span class="chunk-number" aria-hidden="true">01</span><div><div class="chunk-head"><span class="line-dot" style="--line:#39b66c" aria-hidden="true"></span>Green</div><div class="route-branch"><span class="branch-label">B · Boston College:</span><div class="route-stops"><span>Park Street</span><span class="arrow" aria-hidden="true">-&gt;</span><span>Boston College</span><span class="arrow" aria-hidden="true">-&gt;</span><span>Kenmore</span></div></div><div class="route-branch"><span class="branch-label">C · Cleveland Circle:</span><div class="route-stops"><span>Kenmore</span><span class="arrow" aria-hidden="true">-&gt;</span><span>Cleveland Circle</span><span class="arrow" aria-hidden="true">-&gt;</span><span>Kenmore</span></div></div><div class="route-branch"><span class="branch-label">D · Riverside:</span><div class="route-stops"><span>Kenmore</span><span class="arrow" aria-hidden="true">-&gt;</span><span>Riverside</span><span class="arrow" aria-hidden="true">-&gt;</span><span>Copley</span></div></div><div class="route-branch"><span class="branch-label">E · Heath Street:</span><div class="route-stops"><span>Copley</span><span class="arrow" aria-hidden="true">-&gt;</span><span>Heath Street</span><span class="arrow" aria-hidden="true">-&gt;</span><span>Copley</span><span class="arrow" aria-hidden="true">-&gt;</span><span>Park Street</span></div></div></div></li>
+      <li><span class="chunk-number" aria-hidden="true">02</span><div><div class="chunk-head"><span class="line-dot" style="--line:#ee4949" aria-hidden="true"></span>Red + Mattapan</div><div class="route-stops"><span>Park Street</span><span class="arrow" aria-hidden="true">-&gt;</span><span>Alewife</span><span class="arrow" aria-hidden="true">-&gt;</span><span>Braintree</span><span class="arrow" aria-hidden="true">-&gt;</span><span>JFK/UMass</span><span class="arrow" aria-hidden="true">-&gt;</span><span>Mattapan</span><span class="arrow" aria-hidden="true">-&gt;</span><span>Downtown Crossing</span></div></div></li>
+      <li><span class="chunk-number" aria-hidden="true">03</span><div><div class="chunk-head"><span class="line-dot" style="--line:#f7a539" aria-hidden="true"></span>Orange</div><div class="route-stops"><span>Downtown Crossing</span><span class="arrow" aria-hidden="true">-&gt;</span><span>Forest Hills</span><span class="arrow" aria-hidden="true">-&gt;</span><span>Oak Grove</span><span class="arrow" aria-hidden="true">-&gt;</span><span>North Station</span></div></div></li>
+      <li><span class="chunk-number" aria-hidden="true">04</span><div><div class="chunk-head"><span class="line-dot" style="--line:#39b66c" aria-hidden="true"></span>Green</div><div class="route-branch"><span class="branch-label">D · Union Square:</span><div class="route-stops"><span>North Station</span><span class="arrow" aria-hidden="true">-&gt;</span><span>Union Square</span><span class="arrow" aria-hidden="true">-&gt;</span><span>Lechmere</span></div></div><div class="route-branch"><span class="branch-label">E · Medford/Tufts:</span><div class="route-stops"><span>Lechmere</span><span class="arrow" aria-hidden="true">-&gt;</span><span>Medford/Tufts</span><span class="arrow" aria-hidden="true">-&gt;</span><span>Government Center</span></div></div></div></li>
+      <li><span class="chunk-number" aria-hidden="true">05</span><div><div class="chunk-head"><span class="line-dot" style="--line:#609cec" aria-hidden="true"></span>Blue</div><div class="route-stops"><span>Government Center</span><span class="arrow" aria-hidden="true">-&gt;</span><span>Bowdoin</span><span class="arrow" aria-hidden="true">-&gt;</span><span>Wonderland</span><span class="arrow" aria-hidden="true">-&gt;</span><span>Government Center</span></div></div></li>
+      <li><span class="chunk-number" aria-hidden="true">06</span><div><div class="chunk-head"><span class="line-dot" style="--line:#39b66c" aria-hidden="true"></span>Green</div><div class="route-stops"><span>Government Center</span><span class="arrow" aria-hidden="true">-&gt;</span><span>Park Street</span></div></div></li>
     </ol>
   </section>
 
@@ -74,8 +74,8 @@
   <noscript><p>The interactive map needs JavaScript. Enable it to explore the station photos.</p></noscript>
 </main>
 <dialog id="lightbox" aria-labelledby="lightbox-title">
-  <div class="lightbox-header"><h2 id="lightbox-title"></h2><button id="close-lightbox" aria-label="Close enlarged photo">Close ×</button></div>
-  <img id="lightbox-image" alt=""><div class="lightbox-footer"><button id="lightbox-prev" aria-label="Previous enlarged photo">←</button><span id="lightbox-caption"></span><button id="lightbox-next" aria-label="Next enlarged photo">→</button></div>
+  <div class="lightbox-header"><h2 id="lightbox-title"></h2><button id="close-lightbox" aria-label="Close enlarged photo">Close x</button></div>
+  <img id="lightbox-image" alt=""><div class="lightbox-footer"><button id="lightbox-prev" aria-label="Previous enlarged photo">&lt;-</button><span id="lightbox-caption"></span><button id="lightbox-next" aria-label="Next enlarged photo">-&gt;</button></div>
 </dialog>
 </body>
 </html>
