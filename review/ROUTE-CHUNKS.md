@@ -27,7 +27,7 @@ The Panasonic camera reports 2026-03-28. The Samsung reports 2013-10-16, which i
 | SAM_0707.JPG – SAM_0726.JPG | Blue outbound: State → Wonderland |
 | SAM_0727.JPG – SAM_0733.JPG | Blue return: Wonderland → Bowdoin → Government Center |
 
-The PDF supports the Park Street transfer hypothesis for P1010910–P1010914, but the owner requested leaving these shots unresolved for visual review. The plan does not fill photo gaps or certify that a stop was visited.
+The owner confirmed P1010911–P1010914 as Park Street. P1010910 remains unresolved but is omitted because both Park Street and Boylston have confirmed photos. The plan does not fill photo gaps or certify that a stop was visited.
 
 ## Relative timing
 
@@ -44,3 +44,21 @@ Relative timing resolved two more frames: P1010797 is most likely Saint Paul Str
 ## Orange Line correction
 
 SAM_0655 clearly shows BACK BAY STATION and its Clarendon Street / Columbus Avenue exits. SAM_0654 is a separate stop between the readable Chinatown and Back Bay photos, with a Washington Street exit and faint historical lettering; it is assigned to Tufts Medical Center as inferred. Its earlier exclusion as a Chinatown duplicate was incorrect and has been reversed. The Orange Line now has a photo for all 20 stations.
+
+## Owner confirmations and remaining gaps
+
+Eight decisions were imported from the supplied `photo-overrides.json`. The paired Park Street door portraits (P1010913/P1010914) remain one selected composition even though both locations were confirmed.
+
+The selections for P1010858/P1010859 name Chestnut Hill on Green D, while the surrounding camera chunk is Green B. These owner decisions are preserved, but both ambiguous streetscapes are omitted: Chestnut Hill (D), Chestnut Hill Avenue (B), and South Street already have readable station signs. Warren’s confirmed but defocused P1010851/P1010852 are likewise omitted in favor of its readable return sign P1010874.
+
+The return photographs provide positive evidence that supplements gaps in the outbound photo sequence. These are photo gaps, not proof of missed visits:
+
+| Outbound gap / mystery frame | Evidence from the return | Remaining useful question |
+| --- | --- | --- |
+| C, P1010796 between Saint Mary’s and Coolidge Corner | Kent has sequence-based P1010816; Hawes has no assigned photo | Kent or Hawes? Do not label it Hawes merely to fill the gap. |
+| C, P1010805 between Washington Square and Cleveland Circle | Dean P1010808 and Tappan P1010809 have signs; Englewood has no assigned photo | Could the streetscape establish Englewood? |
+| C, P1010802 just before Washington Square | Fairbanks has only the inferred inbound P1010811 | Station vicinity or scenery in transit? |
+| B, P1010843 between Blandford and Amory | BU Central P1010882 and BU East P1010883 both have signs | No location decision needed: both visits are established. |
+| Samsung isolated SAM_0645 | Babcock and Amory have outbound and return sign photos | No location decision needed: both visits are established. |
+
+Inferred photos are retained only for stations without confirmed photo evidence. Unresolved shots are omitted if every plausible station already has confirmed photos. These omissions do not rewrite uncertain locations as confirmed.

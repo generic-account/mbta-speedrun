@@ -29,6 +29,16 @@ for photo in photos.values():
         assert photo['file'] in stations[photo['station']]['photos']
 inventory=json.loads((ROOT/'review/photo-inventory.json').read_text())
 assert len(inventory)==288 and len({p['file'] for p in inventory})==288
+curation_path=ROOT/'review/photo-curation.json'
+curation=json.loads(curation_path.read_text()) if curation_path.exists() else {}
+for photo in inventory:
+    keeper=curation.get(photo['file'],{}).get('duplicateOf',photo.get('duplicateOf'))
+    if keeper:
+        assert not (photo['file'] in photos and keeper in photos), 'Repeated composition published twice'
+for station in stations.values():
+    selected=[photos[file] for file in station['photos']]
+    if any(p['status']=='confirmed' for p in selected):
+        assert all(p['status']!='inferred' for p in selected), 'Redundant inferred station photo'
 # The public page and local review share one full image and one thumbnail per original.
 expected_images=set()
 for photo in inventory:

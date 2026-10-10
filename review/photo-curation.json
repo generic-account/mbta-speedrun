@@ -1,0 +1,34 @@
+{
+  "P1010891.JPG": {
+    "duplicateOf": "P1010890.JPG",
+    "reason": "Same Copley platform composition moments apart; retain the cleaner frame."
+  },
+  "SAM_0728.JPG": {
+    "duplicateOf": "SAM_0729.JPG",
+    "reason": "Same Bowdoin historical-photo wall; retain the closer, clearer view."
+  },
+  "P1010827.JPG": {
+    "duplicateOf": "P1010828.JPG",
+    "reason": "Repeated Reservoir yard composition of the same train; retain the wider, cleaner view."
+  },
+  "P1010975.JPG": {
+    "duplicateOf": "P1010976.JPG",
+    "reason": "Repeated cemetery view from the trolley; retain the clearer frame."
+  },
+  "P1010851.JPG": {
+    "include": false,
+    "reason": "Owner confirms Warren Street, but this defocused frame adds no useful view beyond the readable return sign in P1010874."
+  },
+  "P1010852.JPG": {
+    "include": false,
+    "reason": "Owner confirms Warren Street, but this defocused frame adds no useful view beyond the readable return sign in P1010874."
+  },
+  "P1010858.JPG": {
+    "include": false,
+    "reason": "Owner selected Chestnut Hill (D), while the local photo chunk is Green B. Chestnut Hill (P1010832), Chestnut Hill Avenue (P1010871), and South Street (P1010860) already have readable signs; omit this ambiguous streetscape without changing the owner\u2019s choice."
+  },
+  "P1010859.JPG": {
+    "include": false,
+    "reason": "Owner selected Chestnut Hill (D), while the local photo chunk is Green B. Chestnut Hill (P1010832), Chestnut Hill Avenue (P1010871), and South Street (P1010860) already have readable signs; omit this ambiguous streetscape without changing the owner\u2019s choice."
+  }
+}

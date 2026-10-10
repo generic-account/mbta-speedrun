@@ -6,20 +6,9 @@ Uncertain station shots remain withheld. Between-stops photos are included in th
 
 | Photo | Possible stop | Evidence |
 | --- | --- | --- |
-| [P1010796.JPG](../site/assets/photos/P1010796.webp) | Kent Street | About 43 seconds before the probable Saint Paul frame and 83 seconds before Coolidge Corner; likely Kent, possibly Hawes. No readable sign. |
-| [P1010802.JPG](../site/assets/photos/P1010802.webp) | Fairbanks Street | Embankment view 16 seconds before a readable Washington Square sign; could be near Fairbanks or in transit. Earlier Brandon Hall guess is weak. |
-| [P1010805.JPG](../site/assets/photos/P1010805.webp) | Tappan Street | streetscape after Washington Square; could be Dean or Englewood |
-| [P1010843.JPG](../site/assets/photos/P1010843.webp) | Boston University Central | Obscured sign between Blandford and Amory; could be Boston University East |
-| [P1010851.JPG](../site/assets/photos/P1010851.webp) | Warren Street | Two out-of-focus shots after Allston and before Washington; cannot read sign |
-| [P1010852.JPG](../site/assets/photos/P1010852.webp) | Warren Street | Two out-of-focus shots after Allston and before Washington; cannot read sign |
-| [P1010858.JPG](../site/assets/photos/P1010858.webp) | Chestnut Hill Avenue | streetscape sequence |
-| [P1010859.JPG](../site/assets/photos/P1010859.webp) | Chestnut Hill Avenue | Streetscape adjacent to prior photo; may be Chestnut Hill Avenue or South Street |
-| [P1010910.JPG](../site/assets/photos/P1010910.webp) | Park Street | Green tiled columns, souvenir kiosk, and door portraits before Charles/MGH suggest Park Street; could be Boylston |
-| [P1010911.JPG](../site/assets/photos/P1010911.webp) | Park Street | Green tiled columns, souvenir kiosk, and door portraits before Charles/MGH suggest Park Street; could be Boylston |
-| [P1010912.JPG](../site/assets/photos/P1010912.webp) | Park Street | Green tiled columns, souvenir kiosk, and door portraits before Charles/MGH suggest Park Street; could be Boylston |
-| [P1010913.JPG](../site/assets/photos/P1010913.webp) | Park Street | Green tiled columns, souvenir kiosk, and door portraits before Charles/MGH suggest Park Street; could be Boylston |
-| [P1010914.JPG](../site/assets/photos/P1010914.webp) | Park Street | Green tiled columns, souvenir kiosk, and door portraits before Charles/MGH suggest Park Street; could be Boylston |
-| [SAM_0645.JPG](../site/assets/photos/SAM_0645.webp) | Babcock Street | Green platform with modern canopy, probably Babcock or Amory. Isolated Samsung early frame; relative clock hints at B branch, not Red. Cannot read sign through dotted window. |
+| [P1010796.JPG](../site/assets/photos/P1010796.webp) | Kent Street | About 43 seconds before the probable Saint Paul frame and 83 seconds before Coolidge Corner; likely Kent, possibly Hawes. No readable sign. C outbound: Saint Mary’s → this frame → probable Saint Paul → signed Coolidge Corner. Kent has an inbound sequence-based frame (P1010816); Hawes has none. This makes Hawes worth checking, but neither the planned route nor a missing photo proves it was skipped. |
+| [P1010805.JPG](../site/assets/photos/P1010805.webp) | Tappan Street | streetscape after Washington Square; could be Dean or Englewood C outbound: signed Washington Square → this streetscape → signed Cleveland Circle. Tappan and Dean lack individual outbound sign shots, but both are signed on the return (P1010809 and P1010808). Englewood has no assigned photo in either direction; it is the useful remaining candidate, not a confirmed assignment. |
+| [P1010802.JPG](../site/assets/photos/P1010802.webp) | Fairbanks Street | Embankment view 16 seconds before a readable Washington Square sign; could be near Fairbanks or in transit. Earlier Brandon Hall guess is weak. C outbound: this embankment frame is just 16 seconds before signed Washington Square (P1010803). Fairbanks is only inferred from the inbound Washington Square → P1010811 → Brandon Hall sequence. This may be scenery between Fairbanks and Washington Square rather than a station photo. |
 
 ## Between-stops gallery
 
@@ -27,7 +16,6 @@ Uncertain station shots remain withheld. Between-stops photos are included in th
 | --- | --- |
 | [P1010823.JPG](../site/assets/photos/P1010823.webp) | train ceiling between Brookline Village and Brookline Hills |
 | [P1010826.JPG](../site/assets/photos/P1010826.webp) | Reservoir yard, between Beaconsfield and Reservoir |
-| [P1010827.JPG](../site/assets/photos/P1010827.webp) | Reservoir yard, between Beaconsfield and Reservoir |
 | [P1010828.JPG](../site/assets/photos/P1010828.webp) | Reservoir yard, between Beaconsfield and Reservoir |
 | [P1010829.JPG](../site/assets/photos/P1010829.webp) | Reservoir yard, between Beaconsfield and Reservoir |
 | [P1010830.JPG](../site/assets/photos/P1010830.webp) | Reservoir yard, between Beaconsfield and Reservoir |
@@ -54,7 +42,6 @@ Uncertain station shots remain withheld. Between-stops photos are included in th
 | [P1010954.JPG](../site/assets/photos/P1010954.webp) | rail yard approaching Braintree |
 | [P1010956.JPG](../site/assets/photos/P1010956.webp) | train interior |
 | [P1010958.JPG](../site/assets/photos/P1010958.webp) | portraits aboard train |
-| [P1010975.JPG](../site/assets/photos/P1010975.webp) | cemetery beside trolley tracks |
 | [P1010976.JPG](../site/assets/photos/P1010976.webp) | cemetery beside trolley tracks |
 | [P1010978.JPG](../site/assets/photos/P1010978.webp) | vintage trolley interior sign |
 | [P1010981.JPG](../site/assets/photos/P1010981.webp) | trolley no smoking sign |

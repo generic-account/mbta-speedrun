@@ -123,7 +123,12 @@
     "primary": false,
     "camera": "Panasonic DMC-FS25",
     "cameraTime": "2026-03-28T09:20:38.000Z",
-    "routeChunk": "Green C: Park \u2192 Cleveland Circle \u2192 Kenmore"
+    "routeChunk": "Green C: Park \u2192 Cleveland Circle \u2192 Kenmore",
+    "candidateStations": [
+      "place-kntst",
+      "place-hwsst"
+    ],
+    "routeEvidence": "C outbound: Saint Mary\u2019s \u2192 this frame \u2192 probable Saint Paul \u2192 signed Coolidge Corner. Kent has an inbound sequence-based frame (P1010816); Hawes has none. This makes Hawes worth checking, but neither the planned route nor a missing photo proves it was skipped."
   },
   {
     "number": 10,
@@ -179,7 +184,12 @@
     "primary": false,
     "camera": "Panasonic DMC-FS25",
     "cameraTime": "2026-03-28T09:26:04.000Z",
-    "routeChunk": "Green C: Park \u2192 Cleveland Circle \u2192 Kenmore"
+    "routeChunk": "Green C: Park \u2192 Cleveland Circle \u2192 Kenmore",
+    "candidateStations": [
+      "place-fbkst",
+      null
+    ],
+    "routeEvidence": "C outbound: this embankment frame is just 16 seconds before signed Washington Square (P1010803). Fairbanks is only inferred from the inbound Washington Square \u2192 P1010811 \u2192 Brandon Hall sequence. This may be scenery between Fairbanks and Washington Square rather than a station photo."
   },
   {
     "number": 14,
@@ -221,7 +231,13 @@
     "primary": false,
     "camera": "Panasonic DMC-FS25",
     "cameraTime": "2026-03-28T09:28:03.000Z",
-    "routeChunk": "Green C: Park \u2192 Cleveland Circle \u2192 Kenmore"
+    "routeChunk": "Green C: Park \u2192 Cleveland Circle \u2192 Kenmore",
+    "candidateStations": [
+      "place-tapst",
+      "place-denrd",
+      "place-engav"
+    ],
+    "routeEvidence": "C outbound: signed Washington Square \u2192 this streetscape \u2192 signed Cleveland Circle. Tappan and Dean lack individual outbound sign shots, but both are signed on the return (P1010809 and P1010808). Englewood has no assigned photo in either direction; it is the useful remaining candidate, not a confirmed assignment."
   },
   {
     "number": 17,
@@ -753,7 +769,12 @@
     "primary": false,
     "camera": "Panasonic DMC-FS25",
     "cameraTime": "2026-03-28T11:36:25.000Z",
-    "routeChunk": "Green B: Kenmore \u2192 Boston College \u2192 Blandford Street"
+    "routeChunk": "Green B: Kenmore \u2192 Boston College \u2192 Blandford Street",
+    "candidateStations": [
+      "place-bucen",
+      "place-buest"
+    ],
+    "routeEvidence": "B outbound: Blandford \u2192 this obscured frame \u2192 Amory. Both BU Central (P1010882) and BU East (P1010883) are clearly photographed on the return. One missing outbound photo cannot prove which stop was skipped; identifying this frame is unnecessary for coverage."
   },
   {
     "number": 55,
@@ -865,7 +886,10 @@
     "primary": false,
     "camera": "Panasonic DMC-FS25",
     "cameraTime": "2026-03-28T11:52:31.000Z",
-    "routeChunk": "Green B: Kenmore \u2192 Boston College \u2192 Blandford Street"
+    "routeChunk": "Green B: Kenmore \u2192 Boston College \u2192 Blandford Street",
+    "candidateStations": [
+      "place-wrnst"
+    ]
   },
   {
     "number": 63,
@@ -879,7 +903,10 @@
     "primary": false,
     "camera": "Panasonic DMC-FS25",
     "cameraTime": "2026-03-28T11:52:38.000Z",
-    "routeChunk": "Green B: Kenmore \u2192 Boston College \u2192 Blandford Street"
+    "routeChunk": "Green B: Kenmore \u2192 Boston College \u2192 Blandford Street",
+    "candidateStations": [
+      "place-wrnst"
+    ]
   },
   {
     "number": 64,
@@ -963,7 +990,11 @@
     "primary": false,
     "camera": "Panasonic DMC-FS25",
     "cameraTime": "2026-03-28T11:59:51.000Z",
-    "routeChunk": "Green B: Kenmore \u2192 Boston College \u2192 Blandford Street"
+    "routeChunk": "Green B: Kenmore \u2192 Boston College \u2192 Blandford Street",
+    "candidateStations": [
+      "place-chill",
+      "place-sougr"
+    ]
   },
   {
     "number": 70,
@@ -977,7 +1008,11 @@
     "primary": false,
     "camera": "Panasonic DMC-FS25",
     "cameraTime": "2026-03-28T12:01:49.000Z",
-    "routeChunk": "Green B: Kenmore \u2192 Boston College \u2192 Blandford Street"
+    "routeChunk": "Green B: Kenmore \u2192 Boston College \u2192 Blandford Street",
+    "candidateStations": [
+      "place-chill",
+      "place-sougr"
+    ]
   },
   {
     "number": 71,
@@ -1663,7 +1698,12 @@
     "primary": false,
     "camera": "Panasonic DMC-FS25",
     "cameraTime": "2026-03-28T14:20:23.000Z",
-    "routeChunk": "Green E: Copley \u2192 Heath Street \u2192 Park transfer"
+    "routeChunk": "Green E: Copley \u2192 Heath Street \u2192 Park transfer",
+    "candidateStations": [
+      "place-pktrm",
+      "place-boyls"
+    ],
+    "routeEvidence": "Arlington \u2192 these Park-area frames \u2192 Charles/MGH. Owner confirms the kiosk and adjacent door portraits as Park Street. Park Street and Boylston already have readable sign photos, so this unresolved platform shot adds no needed station evidence."
   },
   {
     "number": 120,
@@ -1677,7 +1717,11 @@
     "primary": false,
     "camera": "Panasonic DMC-FS25",
     "cameraTime": "2026-03-28T14:22:01.000Z",
-    "routeChunk": "Green E: Copley \u2192 Heath Street \u2192 Park transfer"
+    "routeChunk": "Green E: Copley \u2192 Heath Street \u2192 Park transfer",
+    "candidateStations": [
+      "place-pktrm",
+      "place-boyls"
+    ]
   },
   {
     "number": 121,
@@ -1691,7 +1735,11 @@
     "primary": false,
     "camera": "Panasonic DMC-FS25",
     "cameraTime": "2026-03-28T14:22:32.000Z",
-    "routeChunk": "Green E: Copley \u2192 Heath Street \u2192 Park transfer"
+    "routeChunk": "Green E: Copley \u2192 Heath Street \u2192 Park transfer",
+    "candidateStations": [
+      "place-pktrm",
+      "place-boyls"
+    ]
   },
   {
     "number": 122,
@@ -1705,7 +1753,11 @@
     "primary": false,
     "camera": "Panasonic DMC-FS25",
     "cameraTime": "2026-03-28T14:22:56.000Z",
-    "routeChunk": "Green E: Copley \u2192 Heath Street \u2192 Park transfer"
+    "routeChunk": "Green E: Copley \u2192 Heath Street \u2192 Park transfer",
+    "candidateStations": [
+      "place-pktrm",
+      "place-boyls"
+    ]
   },
   {
     "number": 123,
@@ -1721,7 +1773,11 @@
     "duplicateReason": "Repeated composition / same scene; curated out, not deleted",
     "camera": "Panasonic DMC-FS25",
     "cameraTime": "2026-03-28T14:23:01.000Z",
-    "routeChunk": "Green E: Copley \u2192 Heath Street \u2192 Park transfer"
+    "routeChunk": "Green E: Copley \u2192 Heath Street \u2192 Park transfer",
+    "candidateStations": [
+      "place-pktrm",
+      "place-boyls"
+    ]
   },
   {
     "number": 124,
@@ -2821,7 +2877,12 @@
     "primary": false,
     "camera": "Samsung DV100 family",
     "cameraTime": "2013-10-16T11:12:38.000Z",
-    "routeChunk": "Samsung early fragments (clock unreliable)"
+    "routeChunk": "Samsung early fragments (clock unreliable)",
+    "candidateStations": [
+      "place-babck",
+      "place-amory"
+    ],
+    "routeEvidence": "Isolated Samsung early fragment, with a long camera-clock gap on each side. Babcock and Amory both have clear Panasonic photos on the B outbound and return chunks, so this frame is not needed to establish either visit."
   },
   {
     "number": 202,
