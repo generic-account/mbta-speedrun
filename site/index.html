@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#000000">
-  <title>MBTA speedrun · Gordon Lichtstein</title>
+  <title>Around the MBTA in 12 hours and 22 minutes</title>
   <link rel="stylesheet" href="assets/style.css">
   <script src="assets/data.js" defer></script>
   <script src="assets/app.js" defer></script>
@@ -13,7 +13,8 @@
 <header class="site-header" role="banner"></header>
 <main>
   <header>
-    <h1>MBTA speedrun</h1>
+    <h1>Around the MBTA in 12 hours and 22 minutes</h1>
+    <p class="byline">Spencer Pogorzelski and Gordon Lichtstein</p>
   </header>
 
   <section aria-label="Interactive station photo map" id="explore">
@@ -46,20 +47,9 @@
     </section>
   </section>
 
-  <section class="route-plan" aria-labelledby="route-title">
-    <h2 id="route-title">Route plan</h2>
-    <ol class="route-chunks">
-      <li><span class="chunk-number" aria-hidden="true">01</span><div><div class="chunk-head"><span class="line-dot" style="--line:#39b66c" aria-hidden="true"></span>Green</div><div class="route-branch"><span class="branch-label">B · Boston College:</span><div class="route-stops"><span>Park Street</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Boston College</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Kenmore</span></div></div><div class="route-branch"><span class="branch-label">C · Cleveland Circle:</span><div class="route-stops"><span>Kenmore</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Cleveland Circle</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Kenmore</span></div></div><div class="route-branch"><span class="branch-label">D · Riverside:</span><div class="route-stops"><span>Kenmore</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Riverside</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Copley</span></div></div><div class="route-branch"><span class="branch-label">E · Heath Street:</span><div class="route-stops"><span>Copley</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Heath Street</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Copley</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Park Street</span></div></div></div></li>
-      <li><span class="chunk-number" aria-hidden="true">02</span><div><div class="chunk-head"><span class="line-dot" style="--line:#ee4949" aria-hidden="true"></span>Red + Mattapan</div><div class="route-stops"><span>Park Street</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Alewife</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Braintree</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>JFK/UMass</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Mattapan</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Downtown Crossing</span></div></div></li>
-      <li><span class="chunk-number" aria-hidden="true">03</span><div><div class="chunk-head"><span class="line-dot" style="--line:#f7a539" aria-hidden="true"></span>Orange</div><div class="route-stops"><span>Downtown Crossing</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Forest Hills</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Oak Grove</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>North Station</span></div></div></li>
-      <li><span class="chunk-number" aria-hidden="true">04</span><div><div class="chunk-head"><span class="line-dot" style="--line:#39b66c" aria-hidden="true"></span>Green</div><div class="route-branch"><span class="branch-label">D · Union Square:</span><div class="route-stops"><span>North Station</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Union Square</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Lechmere</span></div></div><div class="route-branch"><span class="branch-label">E · Medford/Tufts:</span><div class="route-stops"><span>Lechmere</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Medford/Tufts</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Government Center</span></div></div></div></li>
-      <li><span class="chunk-number" aria-hidden="true">05</span><div><div class="chunk-head"><span class="line-dot" style="--line:#609cec" aria-hidden="true"></span>Blue</div><div class="route-stops"><span>Government Center</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Bowdoin</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Wonderland</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Government Center</span></div></div></li>
-      <li><span class="chunk-number" aria-hidden="true">06</span><div><div class="chunk-head"><span class="line-dot" style="--line:#39b66c" aria-hidden="true"></span>Green</div><div class="route-stops"><span>Government Center</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Park Street</span></div></div></li>
-    </ol>
-  </section>
 
-  <article id="story" aria-labelledby="story-title">
-    <h2 id="story-title">Our experience</h2>
+
+  <article id="story" aria-label="Trip write-up">
     <p>It started as one of those impossible late-night ideas you throw out half-jokingly. On Putz at MIT, one of the prized possessions of the main study lounge is the metal MBTA system map that hangs on the wall. We’ve all spaced out staring at it countless times, thinking about a particularly tricky 6.122 problem. But this time we asked: how long would it <em>actually</em> take to ride every train line of the MBTA? Some cursory research led us to believe we might be among the first to attempt this, but while writing this we learned there’s a <a href="https://www.transitruns.org/mbta/">website</a> dedicated to completing the feat (albeit with slightly different rules).</p>
     <p>After deciding on a reasonable specification of the question (ignoring bus lines like the Silver Line and banning modes of transit other than the trains themselves and walking), some napkin math told us it was doable in a day. The final routing was a fun nerd snipe: we solved it (with some coding help from ChatGPT) like a modified Chinese postman problem, with edge weights (times between stops) pulled from Google Maps.</p>
     <p>For a while, this stayed as something we’d do “someday.” Our MIT schedules were quite busy, and it was easy to find a reason why the time wasn’t right. But finally, it seemed we would have a lull in workload the weekend of March 28, 2026, and we decided it was now or never.</p>
@@ -100,6 +90,18 @@
     </ul>
   </article>
 
+
+  <section class="route-plan" aria-labelledby="route-title">
+    <h2 id="route-title">Route plan</h2>
+    <ol class="route-chunks">
+      <li><span class="chunk-number" aria-hidden="true">01</span><div><div class="chunk-head"><span class="line-dot" style="--line:#39b66c" aria-hidden="true"></span>Green</div><div class="route-branch"><span class="branch-label">B · Boston College:</span><div class="route-stops"><span>Park Street</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Boston College</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Kenmore</span></div></div><div class="route-branch"><span class="branch-label">C · Cleveland Circle:</span><div class="route-stops"><span>Kenmore</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Cleveland Circle</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Kenmore</span></div></div><div class="route-branch"><span class="branch-label">D · Riverside:</span><div class="route-stops"><span>Kenmore</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Riverside</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Copley</span></div></div><div class="route-branch"><span class="branch-label">E · Heath Street:</span><div class="route-stops"><span>Copley</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Heath Street</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Copley</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Park Street</span></div></div></div></li>
+      <li><span class="chunk-number" aria-hidden="true">02</span><div><div class="chunk-head"><span class="line-dot" style="--line:#ee4949" aria-hidden="true"></span>Red + Mattapan</div><div class="route-stops"><span>Park Street</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Alewife</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Braintree</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>JFK/UMass</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Mattapan</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Downtown Crossing</span></div></div></li>
+      <li><span class="chunk-number" aria-hidden="true">03</span><div><div class="chunk-head"><span class="line-dot" style="--line:#f7a539" aria-hidden="true"></span>Orange</div><div class="route-stops"><span>Downtown Crossing</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Forest Hills</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Oak Grove</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>North Station</span></div></div></li>
+      <li><span class="chunk-number" aria-hidden="true">04</span><div><div class="chunk-head"><span class="line-dot" style="--line:#39b66c" aria-hidden="true"></span>Green</div><div class="route-branch"><span class="branch-label">D · Union Square:</span><div class="route-stops"><span>North Station</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Union Square</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Lechmere</span></div></div><div class="route-branch"><span class="branch-label">E · Medford/Tufts:</span><div class="route-stops"><span>Lechmere</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Medford/Tufts</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Government Center</span></div></div></div></li>
+      <li><span class="chunk-number" aria-hidden="true">05</span><div><div class="chunk-head"><span class="line-dot" style="--line:#609cec" aria-hidden="true"></span>Blue</div><div class="route-stops"><span>Government Center</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Bowdoin</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Wonderland</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Government Center</span></div></div></li>
+      <li><span class="chunk-number" aria-hidden="true">06</span><div><div class="chunk-head"><span class="line-dot" style="--line:#39b66c" aria-hidden="true"></span>Green</div><div class="route-stops"><span>Government Center</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Park Street</span></div></div></li>
+    </ol>
+  </section>
 
   <section class="between-stops" aria-labelledby="between-title">
     <div class="section-title"><h2 id="between-title">Between stops</h2></div>
