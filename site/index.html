@@ -17,37 +17,6 @@
     <p class="byline">Spencer Pogorzelski and Gordon Lichtstein</p>
   </header>
 
-  <section aria-label="Interactive station photo map" id="explore">
-    <div class="map-frame" id="map-frame">
-      <svg id="map" viewBox="20 340 2200 1870" aria-label="Official MBTA subway map with clickable station photos.">
-        <title>MBTA photo map</title>
-        <desc>Red, Orange, Blue, Green B C D E, and Mattapan lines. Filled dots have photographs. Drag to move, use the controls to zoom, or activate a station dot.</desc>
-      </svg>
-      <div class="map-controls" role="group" aria-label="Map controls">
-        <button id="zoom-in" aria-label="Zoom in">+</button>
-        <button id="zoom-out" aria-label="Zoom out">-</button>
-        <button id="reset-map" aria-label="Fit map">Fit</button>
-      </div>
-      <span id="map-tooltip" hidden></span>
-      <aside class="map-peek" id="map-peek" aria-label="Selected station photo" hidden>
-        <button id="peek-close" aria-label="Dismiss station photo">x</button>
-        <button id="peek-photo"><img id="peek-image" alt=""><span id="peek-name"></span></button>
-      </aside>
-      <div class="map-caption">MBTA · June 2026</div>
-    </div>
-
-    <section class="photo-card" id="photo-card" aria-labelledby="station-title" aria-live="polite">
-      <button id="photo-open" class="photo-open" aria-label="Enlarge selected photo"><img id="station-photo" alt="" width="1440" height="1080"></button>
-      <div class="photo-detail">
-        <p id="station-lines" class="eyebrow"></p>
-        <h2 id="station-title">Park Street</h2>
-        <p id="photo-source" class="photo-source"></p>
-        <div class="photo-pagination"><button id="previous-photo" aria-label="Previous photo">&lt;-</button><span id="photo-count"></span><button id="next-photo" aria-label="Next photo">-&gt;</button></div>
-      </div>
-    </section>
-  </section>
-
-
 
   <article id="story" aria-label="Trip write-up">
     <p>It started as one of those impossible late-night ideas you throw out half-jokingly. On Putz at MIT, one of the prized possessions of the main study lounge is the metal MBTA system map that hangs on the wall. We’ve all spaced out staring at it countless times, thinking about a particularly tricky 6.122 problem. But this time we asked: how long would it <em>actually</em> take to ride every train line of the MBTA? Some cursory research led us to believe we might be among the first to attempt this, but while writing this we learned there’s a <a href="https://www.transitruns.org/mbta/">website</a> dedicated to completing the feat (albeit with slightly different rules).</p>
@@ -101,6 +70,36 @@
       <li><span class="chunk-number" aria-hidden="true">05</span><div><div class="chunk-head"><span class="line-dot" style="--line:#609cec" aria-hidden="true"></span>Blue</div><div class="route-stops"><span>Government Center</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Bowdoin</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Wonderland</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Government Center</span></div></div></li>
       <li><span class="chunk-number" aria-hidden="true">06</span><div><div class="chunk-head"><span class="line-dot" style="--line:#39b66c" aria-hidden="true"></span>Green</div><div class="route-stops"><span>Government Center</span><span class="arrow" aria-hidden="true">-&gt;</span> <span>Park Street</span></div></div></li>
     </ol>
+  </section>
+
+  <section aria-label="Interactive station photo map" id="explore">
+    <div class="map-frame" id="map-frame">
+      <svg id="map" viewBox="20 340 2200 1870" aria-label="Official MBTA subway map with clickable station photos.">
+        <title>MBTA photo map</title>
+        <desc>Red, Orange, Blue, Green B C D E, and Mattapan lines. Filled dots have photographs. Drag to move, use the controls to zoom, or activate a station dot.</desc>
+      </svg>
+      <div class="map-controls" role="group" aria-label="Map controls">
+        <button id="zoom-in" aria-label="Zoom in">+</button>
+        <button id="zoom-out" aria-label="Zoom out">-</button>
+        <button id="reset-map" aria-label="Fit map">Fit</button>
+      </div>
+      <span id="map-tooltip" hidden></span>
+      <aside class="map-peek" id="map-peek" aria-label="Selected station photo" hidden>
+        <button id="peek-close" aria-label="Dismiss station photo">x</button>
+        <button id="peek-photo"><img id="peek-image" alt=""><span id="peek-name"></span></button>
+      </aside>
+      <div class="map-caption">MBTA · June 2026</div>
+    </div>
+
+    <section class="photo-card" id="photo-card" aria-labelledby="station-title" aria-live="polite">
+      <button id="photo-open" class="photo-open" aria-label="Enlarge selected photo"><img id="station-photo" alt="" width="1440" height="1080"></button>
+      <div class="photo-detail">
+        <p id="station-lines" class="eyebrow"></p>
+        <h2 id="station-title">Park Street</h2>
+        <p id="photo-source" class="photo-source"></p>
+        <div class="photo-pagination"><button id="previous-photo" aria-label="Previous photo">&lt;-</button><span id="photo-count"></span><button id="next-photo" aria-label="Next photo">-&gt;</button></div>
+      </div>
+    </section>
   </section>
 
   <section class="between-stops" aria-labelledby="between-title">
