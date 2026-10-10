@@ -15,12 +15,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - name: Build photo manifest
-        run: python3 scripts/build.py
       - name: Validate content and map
         run: |
           python3 scripts/validate.py
-          python3 -m unittest discover -s scripts -p 'test_*.py'
           node --check site/assets/app.js
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4

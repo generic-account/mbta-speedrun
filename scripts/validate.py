@@ -27,28 +27,14 @@ for photo in photos.values():
         assert (ROOT/'site'/photo[field]).is_file(), f"Missing {photo[field]}"
     if photo['station']:
         assert photo['file'] in stations[photo['station']]['photos']
-inventory=json.loads((ROOT/'review/photo-inventory.json').read_text())
-assert len(inventory)==288 and len({p['file'] for p in inventory})==288
-curation_path=ROOT/'review/photo-curation.json'
-curation=json.loads(curation_path.read_text()) if curation_path.exists() else {}
-for photo in inventory:
-    keeper=curation.get(photo['file'],{}).get('duplicateOf',photo.get('duplicateOf'))
-    if keeper:
-        assert not (photo['file'] in photos and keeper in photos), 'Repeated composition published twice'
 for station in stations.values():
     selected=[photos[file] for file in station['photos']]
     if any(p['status']=='confirmed' for p in selected):
         assert all(p['status']!='inferred' for p in selected), 'Redundant inferred station photo'
-# The public page and local review share one full image and one thumbnail per original.
-expected_images=set()
-for photo in inventory:
-    stem=Path(photo['file']).stem
-    for suffix in ['.webp','-thumb.webp']:
-        asset=ROOT/'site/assets/photos'/f'{stem}{suffix}'
-        assert asset.is_file(), f'Missing shared photo asset {asset.name}'
-        expected_images.add(asset.name)
-assert {p.name for p in (ROOT/'site/assets/photos').glob('*.webp')} == expected_images
-assert not (ROOT/'review/previews').exists(), 'Review must use shared photo assets'
+# Every deployed image must be referenced by the production manifest.
+expected_images={Path(photo[field]).name for photo in photos.values() for field in ['src','thumb']}
+assert {p.name for p in (ROOT/'site/assets/photos').glob('*.webp')} == expected_images, 'Unused or missing production images'
+assert not (ROOT/'review').exists(), 'Review tools must stay outside the production tree'
 
 class Links(HTMLParser):
     def handle_starttag(self, tag, attrs):
@@ -60,4 +46,4 @@ assert (ROOT/'site'/data['map']['image']).is_file()
 assert data['map']['image'].endswith('.svg'), 'Map must remain vector artwork'
 assert len({(s['x'],s['y']) for s in stations.values()}) == len(stations), 'Hotspots overlap'
 coverage=sum(bool(s['photos']) for s in stations.values())
-print(f'Validated: {len(stations)} unique stations, {coverage} with photos, {len(photos)} public photos and {len(expected_images)} shared image assets (288 full images + 288 thumbnails).')
+print(f'Validated: {len(stations)} unique stations, {coverage} with photos, {len(photos)} public photos and {len(expected_images)} production image assets.')

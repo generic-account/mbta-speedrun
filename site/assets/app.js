@@ -101,7 +101,7 @@
     const green=station.routes.filter(r=>r.startsWith('Green')).map(r=>r.replace('Green-',''));
     if(green.length)lines.push('Green '+green.join(' / '));
     $('station-lines').textContent=lines.join(' · ');
-    $('locate-station').hidden=false;renderPhoto();
+    renderPhoto();
     if(updateHash)history.replaceState(null,'','#station='+encodeURIComponent(id));
     if(locate)locateStation();
     if(scroll)$('photo-card').scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'nearest'});
@@ -118,18 +118,15 @@
   function showPeek(){
     const p=currentPhotos[photoIndex];$('peek-name').textContent=currentStation.name;
     $('peek-photo').disabled=!p;$('peek-image').hidden=!p;
-    if(p){$('peek-image').src=p.thumb;$('peek-image').alt=currentStation.name+' — click to enlarge';}
+    if(p){$('peek-image').src=p.src;$('peek-image').alt=currentStation.name+' — click to enlarge';}
     else $('peek-image').removeAttribute('src');
-    $('peek-more').hidden=!p;
     $('map-peek').hidden=!p;
   }
   $('peek-close').onclick=()=>{$('map-peek').hidden=true;};
   $('peek-photo').onclick=()=>openLightbox(currentPhotos,photoIndex,currentStation.name);
-  $('peek-more').onclick=()=>{$('map-peek').hidden=true;$('photo-card').scrollIntoView({behavior:'smooth',block:'center'});};
   function movePhoto(delta){if(!currentPhotos.length)return;photoIndex=(photoIndex+delta+currentPhotos.length)%currentPhotos.length;renderPhoto();}
   $('previous-photo').onclick=()=>movePhoto(-1);$('next-photo').onclick=()=>movePhoto(1);
   function locateStation(){const w=homeCamera.w/2.4;const h=w*homeCamera.h/homeCamera.w;camera={x:currentStation.x-w/2,y:currentStation.y-h/2,w,h};renderCamera();frame.scrollIntoView({behavior:'smooth',block:'center'});}
-  $('locate-station').onclick=locateStation;
   const tripPhotos=data.photos.filter(p=>!p.station), gallery=$('trip-gallery');let galleryCount=0;
   // Start with portraits and views, then allow the complete between-stops collection.
   const highlightFiles=['P1010917.JPG','SAM_0644.JPG','P1010958.JPG','P1010828.JPG','P1010945.JPG','SAM_0690.JPG','P1010888.JPG','P1010930.JPG','SAM_0709.JPG'];
