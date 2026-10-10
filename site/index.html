@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A photo adventure around the MBTA. Explore the subway map and click a station to see what we saw there.">
+  <meta name="theme-color" content="#000000">
+  <title>MBTA speedrun · Gordon Lichtstein</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/data.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+<header class="site-header" role="banner"></header>
+<main>
+  <header>
+    <h1>MBTA speedrun</h1>
+  </header>
+
+  <section aria-label="Interactive station photo map" id="explore">
+    <div class="map-frame" id="map-frame">
+      <svg id="map" viewBox="20 340 2200 1870" aria-label="Official MBTA subway map with clickable station photos.">
+        <title>MBTA photo map</title>
+        <desc>Red, Orange, Blue, Green B C D E, and Mattapan lines. Filled dots have photographs. Drag to move, use the controls to zoom, or activate a station dot.</desc>
+      </svg>
+      <div class="map-controls" role="group" aria-label="Map controls">
+        <button id="zoom-in" aria-label="Zoom in">+</button>
+        <button id="zoom-out" aria-label="Zoom out">−</button>
+        <button id="reset-map" aria-label="Fit map">Fit</button>
+      </div>
+      <span id="map-tooltip" hidden></span>
+      <aside class="map-peek" id="map-peek" aria-label="Selected station photo" hidden>
+        <button id="peek-close" aria-label="Dismiss station photo">×</button>
+        <button id="peek-photo"><img id="peek-image" alt="" width="320" height="220"><span id="peek-name"></span></button>
+        <button id="peek-more" class="text-button">More from this stop ↓</button>
+      </aside>
+      <div class="map-caption">MBTA · June 2026</div>
+    </div>
+
+    <section class="photo-card" id="photo-card" aria-labelledby="station-title" aria-live="polite">
+      <button id="photo-open" class="photo-open" aria-label="Enlarge selected photo"><img id="station-photo" alt="" width="1440" height="1080"></button>
+      <div class="photo-detail">
+        <p id="station-lines" class="eyebrow"></p>
+        <h2 id="station-title">Park Street</h2>
+        <p id="photo-source" class="photo-source"></p>
+        <div class="photo-pagination"><button id="previous-photo" aria-label="Previous photo">←</button><span id="photo-count"></span><button id="next-photo" aria-label="Next photo">→</button></div>
+        <p><button class="text-button" id="locate-station">Find on map ↗</button></p>
+      </div>
+    </section>
+  </section>
+
+  <!-- YOUR BLOG POST: remove `hidden` from this article and replace its contents.
+       Add <a href="#story">Our experience</a> to the navigation if desired.
+       No trip dates, duration, or experiences have been invented. -->
+  <article id="story" hidden>
+    <h2>Our experience</h2>
+    <p>Write your blog post here.</p>
+  </article>
+
+  <section class="between-stops" aria-labelledby="between-title">
+    <div class="section-title"><h2 id="between-title">Between stops</h2></div>
+    <div id="trip-gallery" class="trip-gallery"></div>
+    <button id="more-gallery" class="text-button" aria-expanded="false" aria-controls="trip-gallery">Show all photos ↓</button>
+  </section>
+  <noscript><p>The interactive map needs JavaScript. Enable it to explore the station photos.</p></noscript>
+</main>
+<dialog id="lightbox" aria-labelledby="lightbox-title">
+  <div class="lightbox-header"><h2 id="lightbox-title"></h2><button id="close-lightbox" aria-label="Close enlarged photo">Close ×</button></div>
+  <img id="lightbox-image" alt=""><div class="lightbox-footer"><button id="lightbox-prev" aria-label="Previous enlarged photo">←</button><span id="lightbox-caption"></span><button id="lightbox-next" aria-label="Next enlarged photo">→</button></div>
+</dialog>
+</body>
+</html>
