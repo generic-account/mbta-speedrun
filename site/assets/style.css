@@ -22,3 +22,5 @@ header{margin-bottom:28px}
 .map-controls button:hover,.map-peek #peek-close:hover,.photo-pagination button:hover,.lightbox-footer button:hover,.lightbox-header button:hover{background:#fff;color:#000;border-color:#fff}
 .photo-pagination button:disabled,.lightbox-footer button:disabled{opacity:1;color:#999;border-color:#666;background:#000}
 .route-stops .arrow{color:#bbb;font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+
+#story{line-height:1.75}#story h2{margin-bottom:22px}#story h3{font-size:1.1rem;margin:28px 0 12px}#story p{margin-bottom:20px}#story ul{padding-left:24px;margin:0 0 20px}#story li{padding-left:3px;margin:8px 0}#story li>ul{margin:8px 0 12px}#story a{overflow-wrap:anywhere}
